@@ -1,0 +1,358 @@
+2025-05-16 06:46:17,092 - __main__ - INFO - main.py:56 - Logging configured
+2025-05-16 06:46:17,093 - __main__ - INFO - main.py:101 - Template folder: A:\DhapWork\doc5\doc5\document_processor\web\templates
+2025-05-16 06:46:17,093 - __main__ - INFO - main.py:102 - Upload folder: A:\DhapWork\doc5\doc5\uploads
+2025-05-16 06:46:17,093 - __main__ - INFO - main.py:103 - Static folder: A:\DhapWork\doc5\doc5\static
+2025-05-16 06:46:17,115 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 06:46:17,115 - __main__ - INFO - main.py:108 - Using device: cuda
+2025-05-16 06:46:17,211 - document_processor.db.database - INFO - database.py:48 - Database initialized with sqlite:///A:\DhapWork\doc5\doc5\document_processor\document_processor.db
+2025-05-16 06:46:17,387 - __main__ - DEBUG - main.py:133 - Request: GET /
+2025-05-16 06:46:17,469 - __main__ - DEBUG - main.py:133 - Request: GET /cdn-cgi/challenge-platform/scripts/jsd/main.js
+2025-05-16 06:46:18,486 - __main__ - DEBUG - main.py:133 - Request: GET /upload
+2025-05-16 06:46:22,764 - __main__ - DEBUG - main.py:133 - Request: POST /upload
+2025-05-16 06:46:22,769 - document_processor.web.views - INFO - views.py:86 - File uploaded: A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:22,777 - __main__ - DEBUG - main.py:133 - Request: GET /process/w2_0215488d.png
+2025-05-16 06:46:22,777 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 06:46:22,780 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:216 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-16 06:46:26,265 - document_processor.core.classification.classifier - INFO - classifier.py:63 - Document classifier initialized with model: all-MiniLM-L6-v2
+2025-05-16 06:46:26,266 - document_processor.core.information.financial_extractor - INFO - financial_extractor.py:16 - Financial entity extractor initialized
+2025-05-16 06:46:26,266 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 06:46:26,266 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:111 - Targeted extractor initialized with device: cuda
+2025-05-16 06:46:26,266 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:117 - Initializing doctr OCR model
+2025-05-16 06:46:26,633 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\db_resnet50-79bd7d70.pt
+2025-05-16 06:46:27,702 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\crnn_vgg16_bn-9762b0b0.pt
+2025-05-16 06:46:27,787 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:125 - doctr OCR model initialized successfully
+2025-05-16 06:46:27,787 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:137 - Initializing LayoutLMv3 model
+2025-05-16 06:46:28,809 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:141 - LayoutLMv3 model initialized successfully
+2025-05-16 06:46:28,809 - document_processor.core.processor_service - INFO - processor_service.py:53 - Document processor service initialized
+2025-05-16 06:46:28,809 - document_processor.core.processor_service - INFO - processor_service.py:68 - Processing document A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png using optimal mode
+2025-05-16 06:46:28,809 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 06:46:28,810 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:28,810 - document_processor.core.processor_service - INFO - processor_service.py:147 - Copied document to A:\DhapWork\doc5\doc5\static\documents\w2_0215488d_1747367183.png
+2025-05-16 06:46:28,811 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 06:46:28,811 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:28,834 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:29,481 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 06:46:29,481 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 06:46:29,543 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to A:\DhapWork\doc5\doc5\uploads\w2_0215488d_debug.png
+2025-05-16 06:46:29,544 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: A:\DhapWork\doc5\doc5\uploads\w2_0215488d_debug.png
+2025-05-16 06:46:29,545 - document_processor.core.classification.classifier - INFO - classifier.py:93 - Document classified as W2 (Form W-2) based on keywords
+2025-05-16 06:46:29,545 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 06:46:29,545 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:29,553 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: A:\DhapWork\doc5\doc5\uploads\w2_0215488d.png
+2025-05-16 06:46:29,848 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 06:46:29,848 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 06:46:29,908 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to A:\DhapWork\doc5\doc5\uploads\w2_0215488d_debug.png
+2025-05-16 06:46:29,909 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: A:\DhapWork\doc5\doc5\uploads\w2_0215488d_debug.png
+2025-05-16 06:46:30,024 - __main__ - DEBUG - main.py:133 - Request: GET /static/documents/w2_0215488d_1747367183.png
+2025-05-16 06:46:30,027 - __main__ - DEBUG - main.py:133 - Request: GET /static/A:/DhapWork/doc5/doc5/uploads/w2_0215488d_debug.png
+2025-05-16 06:46:36,446 - __main__ - DEBUG - main.py:133 - Request: GET /visualization/A:/DhapWork/doc5/doc5/uploads/w2_0215488d_debug.png
+2025-05-16 06:46:36,491 - __main__ - DEBUG - main.py:133 - Request: GET /A:/DhapWork/doc5/doc5/uploads/w2_0215488d_debug.png
+2025-05-16 06:58:51,082 - __main__ - INFO - main.py:56 - Logging configured
+2025-05-16 06:58:51,082 - __main__ - INFO - main.py:101 - Template folder: a:\DhapWork\doc5\doc5\document_processor\web\templates
+2025-05-16 06:58:51,083 - __main__ - INFO - main.py:102 - Upload folder: a:\DhapWork\doc5\doc5\uploads
+2025-05-16 06:58:51,083 - __main__ - INFO - main.py:103 - Static folder: a:\DhapWork\doc5\doc5\static
+2025-05-16 06:58:51,095 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 06:58:51,095 - __main__ - INFO - main.py:108 - Using device: cuda
+2025-05-16 06:58:51,131 - document_processor.db.database - INFO - database.py:48 - Database initialized with sqlite:///A:\DhapWork\doc5\doc5\document_processor\document_processor.db
+2025-05-16 06:58:51,285 - __main__ - DEBUG - main.py:133 - Request: GET /
+2025-05-16 06:58:51,455 - __main__ - DEBUG - main.py:133 - Request: GET /cdn-cgi/challenge-platform/scripts/jsd/main.js
+2025-05-16 07:00:18,775 - __main__ - DEBUG - main.py:133 - Request: GET /upload
+2025-05-16 07:00:23,840 - __main__ - DEBUG - main.py:133 - Request: POST /upload
+2025-05-16 07:00:23,845 - document_processor.web.views - INFO - views.py:86 - File uploaded: a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:23,855 - __main__ - DEBUG - main.py:133 - Request: GET /process/w2_7317899f.png
+2025-05-16 07:00:23,855 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:00:23,857 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:216 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-16 07:00:26,970 - document_processor.core.classification.classifier - INFO - classifier.py:63 - Document classifier initialized with model: all-MiniLM-L6-v2
+2025-05-16 07:00:26,970 - document_processor.core.information.financial_extractor - INFO - financial_extractor.py:16 - Financial entity extractor initialized
+2025-05-16 07:00:26,971 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:00:26,971 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:111 - Targeted extractor initialized with device: cuda
+2025-05-16 07:00:26,971 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:117 - Initializing doctr OCR model
+2025-05-16 07:00:27,433 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\db_resnet50-79bd7d70.pt
+2025-05-16 07:00:28,764 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\crnn_vgg16_bn-9762b0b0.pt
+2025-05-16 07:00:28,866 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:125 - doctr OCR model initialized successfully
+2025-05-16 07:00:28,866 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:137 - Initializing LayoutLMv3 model
+2025-05-16 07:00:30,032 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:141 - LayoutLMv3 model initialized successfully
+2025-05-16 07:00:30,033 - document_processor.core.processor_service - INFO - processor_service.py:53 - Document processor service initialized
+2025-05-16 07:00:30,033 - document_processor.core.processor_service - INFO - processor_service.py:68 - Processing document a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png using optimal mode
+2025-05-16 07:00:30,033 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:00:30,033 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:30,034 - document_processor.core.processor_service - INFO - processor_service.py:147 - Copied document to a:\DhapWork\doc5\doc5\static\documents\w2_7317899f_1747368024.png
+2025-05-16 07:00:30,035 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:00:30,035 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:30,059 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:30,666 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:00:30,666 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:00:30,738 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to a:\DhapWork\doc5\doc5\uploads\w2_7317899f_debug.png
+2025-05-16 07:00:30,739 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: a:\DhapWork\doc5\doc5\uploads\w2_7317899f_debug.png
+2025-05-16 07:00:30,739 - document_processor.core.classification.classifier - INFO - classifier.py:93 - Document classified as W2 (Form W-2) based on keywords
+2025-05-16 07:00:30,740 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:00:30,740 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:30,748 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: a:\DhapWork\doc5\doc5\uploads\w2_7317899f.png
+2025-05-16 07:00:31,097 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:00:31,097 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:00:31,161 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to a:\DhapWork\doc5\doc5\uploads\w2_7317899f_debug.png
+2025-05-16 07:00:31,161 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: a:\DhapWork\doc5\doc5\uploads\w2_7317899f_debug.png
+2025-05-16 07:00:31,219 - __main__ - DEBUG - main.py:133 - Request: GET /static/documents/w2_7317899f_1747368024.png
+2025-05-16 07:00:31,220 - __main__ - DEBUG - main.py:133 - Request: GET /static/a:/DhapWork/doc5/doc5/uploads/w2_7317899f_debug.png
+2025-05-16 07:14:16,477 - __main__ - INFO - main.py:56 - Logging configured
+2025-05-16 07:14:16,478 - __main__ - INFO - main.py:101 - Template folder: A:\DhapWork\doc5\doc5\document_processor\web\templates
+2025-05-16 07:14:16,478 - __main__ - INFO - main.py:102 - Upload folder: A:\DhapWork\doc5\doc5\uploads
+2025-05-16 07:14:16,478 - __main__ - INFO - main.py:103 - Static folder: A:\DhapWork\doc5\doc5\static
+2025-05-16 07:14:16,492 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:14:16,492 - __main__ - INFO - main.py:108 - Using device: cuda
+2025-05-16 07:14:16,539 - document_processor.db.database - INFO - database.py:48 - Database initialized with sqlite:///A:\DhapWork\doc5\doc5\document_processor\document_processor.db
+2025-05-16 07:14:16,696 - __main__ - DEBUG - main.py:133 - Request: GET /
+2025-05-16 07:14:16,865 - __main__ - DEBUG - main.py:133 - Request: GET /cdn-cgi/challenge-platform/scripts/jsd/main.js
+2025-05-16 07:14:18,522 - __main__ - DEBUG - main.py:133 - Request: GET /upload
+2025-05-16 07:14:22,837 - __main__ - DEBUG - main.py:133 - Request: POST /upload
+2025-05-16 07:14:22,843 - document_processor.web.views - INFO - views.py:86 - File uploaded: A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:22,855 - __main__ - DEBUG - main.py:133 - Request: GET /process/w2_c95c0c78.png
+2025-05-16 07:14:22,855 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:14:22,860 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:216 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-16 07:14:25,400 - document_processor.core.classification.classifier - INFO - classifier.py:63 - Document classifier initialized with model: all-MiniLM-L6-v2
+2025-05-16 07:14:25,400 - document_processor.core.information.financial_extractor - INFO - financial_extractor.py:16 - Financial entity extractor initialized
+2025-05-16 07:14:25,401 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:14:25,401 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:111 - Targeted extractor initialized with device: cuda
+2025-05-16 07:14:25,401 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:117 - Initializing doctr OCR model
+2025-05-16 07:14:25,895 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\db_resnet50-79bd7d70.pt
+2025-05-16 07:14:27,258 - root - INFO - data.py:88 - Using downloaded & verified file: C:\Users\ahmed\.cache\doctr\models\crnn_vgg16_bn-9762b0b0.pt
+2025-05-16 07:14:27,383 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:125 - doctr OCR model initialized successfully
+2025-05-16 07:14:27,384 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:137 - Initializing LayoutLMv3 model
+2025-05-16 07:14:28,497 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:141 - LayoutLMv3 model initialized successfully
+2025-05-16 07:14:28,497 - document_processor.core.processor_service - INFO - processor_service.py:53 - Document processor service initialized
+2025-05-16 07:14:28,497 - document_processor.core.processor_service - INFO - processor_service.py:68 - Processing document A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png using optimal mode
+2025-05-16 07:14:28,499 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:14:28,499 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:28,500 - document_processor.core.processor_service - INFO - processor_service.py:147 - Copied document to A:\DhapWork\doc5\doc5\static\documents\w2_c95c0c78_1747368863.png
+2025-05-16 07:14:28,500 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:14:28,500 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:28,523 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:29,312 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:14:29,312 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:14:29,391 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78_debug.png
+2025-05-16 07:14:29,391 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78_debug.png
+2025-05-16 07:14:29,392 - document_processor.core.classification.classifier - INFO - classifier.py:93 - Document classified as W2 (Form W-2) based on keywords
+2025-05-16 07:14:29,392 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:14:29,392 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:29,401 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:177 - Processing document: A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78.png
+2025-05-16 07:14:29,746 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:14:29,746 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:14:29,813 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:387 - Saved bounding box visualization to A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78_debug.png
+2025-05-16 07:14:29,813 - document_processor.core.extraction.targeted_extractor - INFO - targeted_extractor.py:216 - Created bounding box visualization: A:\DhapWork\doc5\doc5\uploads\w2_c95c0c78_debug.png
+2025-05-16 07:14:29,815 - document_processor.core.extraction.template_mapping - WARNING - template_mapping.py:240 - Region for box d not defined in layout standard_layout
+2025-05-16 07:14:29,819 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:113 - Validation issue with employee_name: Must contain letters, spaces, periods, or hyphens
+2025-05-16 07:14:29,819 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:113 - Validation issue with employer_name: Must not be empty
+2025-05-16 07:14:29,819 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:113 - Validation issue with social_security_wages: Must be a currency amount
+2025-05-16 07:14:29,820 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:113 - Validation issue with medicare_wages: Must be a currency amount
+2025-05-16 07:14:29,919 - __main__ - DEBUG - main.py:133 - Request: GET /static/documents/w2_c95c0c78_1747368863.png
+2025-05-16 07:14:29,921 - __main__ - DEBUG - main.py:133 - Request: GET /static/A:/DhapWork/doc5/doc5/uploads/w2_c95c0c78_debug.png
+2025-05-16 07:32:47,476 - __main__ - INFO - main.py:56 - Logging configured
+2025-05-16 07:32:47,477 - __main__ - INFO - main.py:101 - Template folder: a:\DhapWork\doc5\doc5\document_processor\web\templates
+2025-05-16 07:32:47,477 - __main__ - INFO - main.py:102 - Upload folder: a:\DhapWork\doc5\doc5\uploads
+2025-05-16 07:32:47,477 - __main__ - INFO - main.py:103 - Static folder: a:\DhapWork\doc5\doc5\static
+2025-05-16 07:32:47,490 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:32:47,490 - __main__ - INFO - main.py:108 - Using device: cuda
+2025-05-16 07:32:47,530 - document_processor.db.database - INFO - database.py:48 - Database initialized with sqlite:///A:\DhapWork\doc5\doc5\document_processor\document_processor.db
+2025-05-16 07:32:47,829 - __main__ - DEBUG - main.py:133 - Request: GET /
+2025-05-16 07:32:48,046 - __main__ - DEBUG - main.py:133 - Request: GET /cdn-cgi/challenge-platform/scripts/jsd/main.js
+2025-05-16 07:32:49,296 - __main__ - DEBUG - main.py:133 - Request: GET /upload
+2025-05-16 07:32:53,826 - __main__ - DEBUG - main.py:133 - Request: POST /upload
+2025-05-16 07:32:53,830 - document_processor.web.views - INFO - views.py:86 - File uploaded: a:\DhapWork\doc5\doc5\uploads\w2_da7ec94a.png
+2025-05-16 07:32:53,839 - __main__ - DEBUG - main.py:133 - Request: GET /process/w2_da7ec94a.png
+2025-05-16 07:32:53,839 - document_processor.utils.gpu_utils - INFO - gpu_utils.py:21 - GPU detected: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+2025-05-16 07:32:53,842 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:216 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-16 07:32:57,249 - document_processor.core.classification.classifier - INFO - classifier.py:63 - Document classifier initialized with model: all-MiniLM-L6-v2
+2025-05-16 07:32:57,249 - document_processor.core.information.financial_extractor - INFO - financial_extractor.py:16 - Financial entity extractor initialized
+2025-05-16 07:32:57,249 - document_processor.core.processor_service - INFO - processor_service.py:53 - Document processor service initialized
+2025-05-16 07:32:57,250 - document_processor.core.processor_service - INFO - processor_service.py:68 - Processing document a:\DhapWork\doc5\doc5\uploads\w2_da7ec94a.png using optimal mode
+2025-05-16 07:32:57,250 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.pdf', '.jpg', '.jpeg', '.png', '.tiff']
+2025-05-16 07:32:57,250 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_da7ec94a.png
+2025-05-16 07:32:57,251 - document_processor.core.processor_service - INFO - processor_service.py:242 - Copied document to a:\DhapWork\doc5\doc5\static\documents\w2_da7ec94a_1747369974.png
+2025-05-16 07:32:57,252 - document_processor.core.extraction.text_extractor - INFO - text_extractor.py:24 - Text extractor initialized
+2025-05-16 07:32:57,252 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.png', '.jpg', '.jpeg', '.tiff', '.tif']
+2025-05-16 07:32:57,252 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_da7ec94a.png
+2025-05-16 07:32:59,816 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:32:59,816 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:32:59,824 - PIL.Image - DEBUG - Image.py:409 - Importing BlpImagePlugin
+2025-05-16 07:32:59,826 - PIL.Image - DEBUG - Image.py:409 - Importing BmpImagePlugin
+2025-05-16 07:32:59,826 - PIL.Image - DEBUG - Image.py:409 - Importing BufrStubImagePlugin
+2025-05-16 07:32:59,827 - PIL.Image - DEBUG - Image.py:409 - Importing CurImagePlugin
+2025-05-16 07:32:59,829 - PIL.Image - DEBUG - Image.py:409 - Importing DcxImagePlugin
+2025-05-16 07:32:59,831 - PIL.Image - DEBUG - Image.py:409 - Importing DdsImagePlugin
+2025-05-16 07:32:59,835 - PIL.Image - DEBUG - Image.py:409 - Importing EpsImagePlugin
+2025-05-16 07:32:59,836 - PIL.Image - DEBUG - Image.py:409 - Importing FitsImagePlugin
+2025-05-16 07:32:59,837 - PIL.Image - DEBUG - Image.py:409 - Importing FliImagePlugin
+2025-05-16 07:32:59,838 - PIL.Image - DEBUG - Image.py:409 - Importing FpxImagePlugin
+2025-05-16 07:32:59,839 - PIL.Image - DEBUG - Image.py:412 - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-05-16 07:32:59,839 - PIL.Image - DEBUG - Image.py:409 - Importing FtexImagePlugin
+2025-05-16 07:32:59,840 - PIL.Image - DEBUG - Image.py:409 - Importing GbrImagePlugin
+2025-05-16 07:32:59,841 - PIL.Image - DEBUG - Image.py:409 - Importing GifImagePlugin
+2025-05-16 07:32:59,841 - PIL.Image - DEBUG - Image.py:409 - Importing GribStubImagePlugin
+2025-05-16 07:32:59,841 - PIL.Image - DEBUG - Image.py:409 - Importing Hdf5StubImagePlugin
+2025-05-16 07:32:59,842 - PIL.Image - DEBUG - Image.py:409 - Importing IcnsImagePlugin
+2025-05-16 07:32:59,845 - PIL.Image - DEBUG - Image.py:409 - Importing IcoImagePlugin
+2025-05-16 07:32:59,846 - PIL.Image - DEBUG - Image.py:409 - Importing ImImagePlugin
+2025-05-16 07:32:59,847 - PIL.Image - DEBUG - Image.py:409 - Importing ImtImagePlugin
+2025-05-16 07:32:59,849 - PIL.Image - DEBUG - Image.py:409 - Importing IptcImagePlugin
+2025-05-16 07:32:59,850 - PIL.Image - DEBUG - Image.py:409 - Importing JpegImagePlugin
+2025-05-16 07:32:59,850 - PIL.Image - DEBUG - Image.py:409 - Importing Jpeg2KImagePlugin
+2025-05-16 07:32:59,850 - PIL.Image - DEBUG - Image.py:409 - Importing McIdasImagePlugin
+2025-05-16 07:32:59,850 - PIL.Image - DEBUG - Image.py:409 - Importing MicImagePlugin
+2025-05-16 07:32:59,852 - PIL.Image - DEBUG - Image.py:412 - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-05-16 07:32:59,852 - PIL.Image - DEBUG - Image.py:409 - Importing MpegImagePlugin
+2025-05-16 07:32:59,853 - PIL.Image - DEBUG - Image.py:409 - Importing MpoImagePlugin
+2025-05-16 07:32:59,855 - PIL.Image - DEBUG - Image.py:409 - Importing MspImagePlugin
+2025-05-16 07:32:59,856 - PIL.Image - DEBUG - Image.py:409 - Importing PalmImagePlugin
+2025-05-16 07:32:59,857 - PIL.Image - DEBUG - Image.py:409 - Importing PcdImagePlugin
+2025-05-16 07:32:59,858 - PIL.Image - DEBUG - Image.py:409 - Importing PcxImagePlugin
+2025-05-16 07:32:59,858 - PIL.Image - DEBUG - Image.py:409 - Importing PdfImagePlugin
+2025-05-16 07:32:59,862 - PIL.Image - DEBUG - Image.py:409 - Importing PixarImagePlugin
+2025-05-16 07:32:59,863 - PIL.Image - DEBUG - Image.py:409 - Importing PngImagePlugin
+2025-05-16 07:32:59,863 - PIL.Image - DEBUG - Image.py:409 - Importing PpmImagePlugin
+2025-05-16 07:32:59,863 - PIL.Image - DEBUG - Image.py:409 - Importing PsdImagePlugin
+2025-05-16 07:32:59,864 - PIL.Image - DEBUG - Image.py:409 - Importing QoiImagePlugin
+2025-05-16 07:32:59,864 - PIL.Image - DEBUG - Image.py:409 - Importing SgiImagePlugin
+2025-05-16 07:32:59,865 - PIL.Image - DEBUG - Image.py:409 - Importing SpiderImagePlugin
+2025-05-16 07:32:59,866 - PIL.Image - DEBUG - Image.py:409 - Importing SunImagePlugin
+2025-05-16 07:32:59,866 - PIL.Image - DEBUG - Image.py:409 - Importing TgaImagePlugin
+2025-05-16 07:32:59,867 - PIL.Image - DEBUG - Image.py:409 - Importing TiffImagePlugin
+2025-05-16 07:32:59,867 - PIL.Image - DEBUG - Image.py:409 - Importing WebPImagePlugin
+2025-05-16 07:32:59,908 - PIL.Image - DEBUG - Image.py:409 - Importing WmfImagePlugin
+2025-05-16 07:32:59,909 - PIL.Image - DEBUG - Image.py:409 - Importing XbmImagePlugin
+2025-05-16 07:32:59,912 - PIL.Image - DEBUG - Image.py:409 - Importing XpmImagePlugin
+2025-05-16 07:32:59,913 - PIL.Image - DEBUG - Image.py:409 - Importing XVThumbImagePlugin
+2025-05-16 07:33:02,675 - docling.document_converter - INFO - document_converter.py:269 - Going to convert document batch...
+2025-05-16 07:33:02,675 - docling.document_converter - INFO - document_converter.py:304 - Initializing pipeline for StandardPdfPipeline with options hash 3d2abd0e021741887551c73bd132b421
+2025-05-16 07:33:02,708 - docling.models.factories.base_factory - INFO - base_factory.py:112 - Loading plugin 'docling_defaults'
+2025-05-16 07:33:02,709 - docling.models.factories - INFO - __init__.py:16 - Registered ocr engines: ['easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2025-05-16 07:33:03,003 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:33:04,805 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:33:05,254 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640664836352 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:05,255 - filelock - DEBUG - _api.py:334 - Lock 1640664836352 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:05,259 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665247344 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:05,259 - filelock - DEBUG - _api.py:334 - Lock 1640665247344 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:05,286 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665239904 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:05,287 - filelock - DEBUG - _api.py:334 - Lock 1640665239904 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:05,289 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665314128 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:05,289 - filelock - DEBUG - _api.py:334 - Lock 1640665314128 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:05,456 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665247344 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:05,456 - filelock - DEBUG - _api.py:367 - Lock 1640665247344 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:05,478 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665239904 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:05,478 - filelock - DEBUG - _api.py:367 - Lock 1640665239904 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:05,606 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665311632 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\66d8912f290375d3466f91be2048030a16317e84c8f1f69d3dbd7adc6d6cd2a9.lock
+2025-05-16 07:33:05,606 - filelock - DEBUG - _api.py:334 - Lock 1640665311632 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\66d8912f290375d3466f91be2048030a16317e84c8f1f69d3dbd7adc6d6cd2a9.lock
+2025-05-16 07:33:05,627 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665303424 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:05,628 - filelock - DEBUG - _api.py:334 - Lock 1640665303424 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:05,673 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665309184 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:05,673 - filelock - DEBUG - _api.py:334 - Lock 1640665309184 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:05,707 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665142032 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:05,708 - filelock - DEBUG - _api.py:334 - Lock 1640665142032 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:05,817 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640664836352 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:05,818 - filelock - DEBUG - _api.py:367 - Lock 1640664836352 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:05,866 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665235824 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:05,866 - filelock - DEBUG - _api.py:334 - Lock 1640665235824 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:05,974 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665142272 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:05,974 - filelock - DEBUG - _api.py:334 - Lock 1640665142272 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:06,041 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665301984 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:06,042 - filelock - DEBUG - _api.py:334 - Lock 1640665301984 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:06,092 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665235824 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:06,092 - filelock - DEBUG - _api.py:367 - Lock 1640665235824 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:06,154 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665303424 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:06,154 - filelock - DEBUG - _api.py:367 - Lock 1640665303424 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:06,192 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665142272 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:06,192 - filelock - DEBUG - _api.py:367 - Lock 1640665142272 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:06,210 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665309184 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:06,210 - filelock - DEBUG - _api.py:367 - Lock 1640665309184 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:06,352 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665301984 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:06,352 - filelock - DEBUG - _api.py:367 - Lock 1640665301984 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:19,642 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665314128 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:19,642 - filelock - DEBUG - _api.py:367 - Lock 1640665314128 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:27,478 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665142032 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:27,480 - filelock - DEBUG - _api.py:367 - Lock 1640665142032 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:32,639 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665311632 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\66d8912f290375d3466f91be2048030a16317e84c8f1f69d3dbd7adc6d6cd2a9.lock
+2025-05-16 07:33:32,639 - filelock - DEBUG - _api.py:367 - Lock 1640665311632 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\66d8912f290375d3466f91be2048030a16317e84c8f1f69d3dbd7adc6d6cd2a9.lock
+2025-05-16 07:33:34,310 - docling_ibm_models.layoutmodel.layout_predictor - DEBUG - layout_predictor.py:95 - LayoutPredictor settings: {'safe_tensors_file': 'C:\\Users\\ahmed\\.cache\\huggingface\\hub\\models--ds4sd--docling-models\\snapshots\\36bebf56681740529abd09f5473a93a69373fbf0\\model_artifacts\\layout\\model.safetensors', 'device': 'cuda', 'num_threads': 4, 'image_size': 640, 'threshold': 0.3}
+2025-05-16 07:33:34,807 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1641315080992 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9.lock
+2025-05-16 07:33:34,807 - filelock - DEBUG - _api.py:334 - Lock 1641315080992 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9.lock
+2025-05-16 07:33:34,817 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665964400 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:34,817 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665965120 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:34,817 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665957152 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:34,818 - filelock - DEBUG - _api.py:334 - Lock 1640665964400 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:34,818 - filelock - DEBUG - _api.py:334 - Lock 1640665965120 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:34,818 - filelock - DEBUG - _api.py:334 - Lock 1640665957152 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:34,837 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665971408 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:34,837 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665969632 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:34,837 - filelock - DEBUG - _api.py:334 - Lock 1640665971408 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:34,838 - filelock - DEBUG - _api.py:334 - Lock 1640665969632 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:35,040 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665965120 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:35,040 - filelock - DEBUG - _api.py:367 - Lock 1640665965120 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\9430eb3c89847aa8f80af5c96df3c348fca6da63.lock
+2025-05-16 07:33:35,127 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665963152 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:35,127 - filelock - DEBUG - _api.py:334 - Lock 1640665963152 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:35,160 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1640665967424 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:35,161 - filelock - DEBUG - _api.py:334 - Lock 1640665967424 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:35,282 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1641315089824 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:35,283 - filelock - DEBUG - _api.py:334 - Lock 1641315089824 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:35,351 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665964400 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:35,351 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665957152 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:35,351 - filelock - DEBUG - _api.py:367 - Lock 1640665964400 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\7008c0269fece2af4ca4d79d116cf5a783178e58.lock
+2025-05-16 07:33:35,351 - filelock - DEBUG - _api.py:367 - Lock 1640665957152 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\575b058b45230d48a06df9b1944f4bd40949db1d.lock
+2025-05-16 07:33:35,357 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665963152 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:35,357 - filelock - DEBUG - _api.py:367 - Lock 1640665963152 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\fcdff16b42e5ebc51d28f59184490c6eff91a88b.lock
+2025-05-16 07:33:35,432 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665967424 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:35,432 - filelock - DEBUG - _api.py:367 - Lock 1640665967424 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\4dc84c9101238bb955158144660155da99438490.lock
+2025-05-16 07:33:35,515 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1641315089824 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:35,516 - filelock - DEBUG - _api.py:367 - Lock 1641315089824 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\5036aa114b9393f607440cb0f6cc54229b5b30e1.lock
+2025-05-16 07:33:35,596 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1641333016672 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:35,596 - filelock - DEBUG - _api.py:334 - Lock 1641333016672 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:35,669 - filelock - DEBUG - _api.py:331 - Attempting to acquire lock 1641315079360 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:35,670 - filelock - DEBUG - _api.py:334 - Lock 1641315079360 acquired on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:35,797 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665971408 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:35,797 - filelock - DEBUG - _api.py:367 - Lock 1640665971408 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d24c213cfa3d55cc4a301f415b54a19e7ce104cc.lock
+2025-05-16 07:33:35,858 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1641333016672 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:35,859 - filelock - DEBUG - _api.py:367 - Lock 1641333016672 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\d02c5889d288b8baefd42e9e4da094f0cea07bbe.lock
+2025-05-16 07:33:56,780 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1641315079360 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:56,780 - filelock - DEBUG - _api.py:367 - Lock 1641315079360 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718.lock
+2025-05-16 07:33:58,447 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1640665969632 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:33:58,447 - filelock - DEBUG - _api.py:367 - Lock 1640665969632 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\31e60b4709571b613bc8736a9c982fb550d8d7a1809160a68a8282af60c8910b.lock
+2025-05-16 07:34:00,993 - filelock - DEBUG - _api.py:364 - Attempting to release lock 1641315080992 on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9.lock
+2025-05-16 07:34:00,993 - filelock - DEBUG - _api.py:367 - Lock 1641315080992 released on C:\Users\ahmed\.cache\huggingface\hub\.locks\models--ds4sd--docling-models\2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9.lock
+2025-05-16 07:34:00,995 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:34:01,606 - docling.models.factories.base_factory - INFO - base_factory.py:112 - Loading plugin 'docling_defaults'
+2025-05-16 07:34:01,607 - docling.models.factories - INFO - __init__.py:26 - Registered picture descriptions: ['vlm', 'api']
+2025-05-16 07:34:01,607 - docling.pipeline.base_pipeline - INFO - base_pipeline.py:38 - Processing document w2_da7ec94a.png
+2025-05-16 07:34:05,655 - docling.pipeline.base_pipeline - DEBUG - base_pipeline.py:185 - Finished converting page batch time=1088845.218
+2025-05-16 07:34:05,658 - docling.document_converter - INFO - document_converter.py:284 - Finished converting document w2_da7ec94a.png in 65.86 sec.
+2025-05-16 07:34:05,675 - document_processor.core.classification.classifier - INFO - classifier.py:93 - Document classified as W2 (Form W-2) based on keywords
+2025-05-16 07:34:05,675 - document_processor.core.processor_service - WARNING - processor_service.py:197 - Word coordinate extraction not fully implemented for png files
+2025-05-16 07:34:05,676 - document_processor.core.extraction.text_extractor - INFO - text_extractor.py:24 - Text extractor initialized
+2025-05-16 07:34:05,676 - document_processor.utils.validation - DEBUG - validation.py:46 - Validating file extension: .png against allowed: ['.png', '.jpg', '.jpeg', '.tiff', '.tif']
+2025-05-16 07:34:05,676 - document_processor.utils.validation - DEBUG - validation.py:57 - File validation successful for a:\DhapWork\doc5\doc5\uploads\w2_da7ec94a.png
+2025-05-16 07:34:05,678 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IHDR' 16 13
+2025-05-16 07:34:05,678 - PIL.PngImagePlugin - DEBUG - PngImagePlugin.py:197 - STREAM b'IDAT' 41 65536
+2025-05-16 07:34:05,688 - docling.document_converter - INFO - document_converter.py:269 - Going to convert document batch...
+2025-05-16 07:34:05,688 - docling.document_converter - INFO - document_converter.py:304 - Initializing pipeline for StandardPdfPipeline with options hash 3d2abd0e021741887551c73bd132b421
+2025-05-16 07:34:05,690 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:34:06,978 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:34:07,527 - docling_ibm_models.layoutmodel.layout_predictor - DEBUG - layout_predictor.py:95 - LayoutPredictor settings: {'safe_tensors_file': 'C:\\Users\\ahmed\\.cache\\huggingface\\hub\\models--ds4sd--docling-models\\snapshots\\36bebf56681740529abd09f5473a93a69373fbf0\\model_artifacts\\layout\\model.safetensors', 'device': 'cuda', 'num_threads': 4, 'image_size': 640, 'threshold': 0.3}
+2025-05-16 07:34:07,737 - docling.utils.accelerator_utils - INFO - accelerator_utils.py:67 - Accelerator device: 'cuda:0'
+2025-05-16 07:34:08,124 - docling.pipeline.base_pipeline - INFO - base_pipeline.py:38 - Processing document w2_da7ec94a.png
+2025-05-16 07:34:11,708 - docling.pipeline.base_pipeline - DEBUG - base_pipeline.py:185 - Finished converting page batch time=1088851.281
+2025-05-16 07:34:11,710 - docling.document_converter - INFO - document_converter.py:284 - Finished converting document w2_da7ec94a.png in 6.03 sec.
+2025-05-16 07:34:11,715 - document_processor.core.processor_service - INFO - processor_service.py:158 - Using specialized W2 extractor for document type W2 (Form W-2)
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field employee_ssn (box a) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field employee_name (box e) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field employer_ein (box b) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field employer_name (box c) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field control_number (box d) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field wages (box 1) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field federal_tax (box 2) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field social_security_wages (box 3) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field social_security_tax (box 4) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field medicare_wages (box 5) has 0 candidate blocks
+2025-05-16 07:34:11,716 - document_processor.core.extraction.w2_template - DEBUG - w2_template.py:271 - Field medicare_tax (box 6) has 0 candidate blocks
+2025-05-16 07:34:11,719 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:140 - Validation issue with wages: Must be a currency amount
+2025-05-16 07:34:11,719 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:140 - Validation issue with federal_tax: Must be a currency amount
+2025-05-16 07:34:11,719 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:140 - Validation issue with social_security_wages: Must be a currency amount
+2025-05-16 07:34:11,719 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:140 - Validation issue with social_security_tax: Must be a currency amount
+2025-05-16 07:34:11,719 - document_processor.core.extraction.document_extractors.w2_extractor - WARNING - w2_extractor.py:140 - Validation issue with medicare_wages: Must be a currency amount
+2025-05-16 07:34:11,888 - __main__ - DEBUG - main.py:133 - Request: GET /static/documents/w2_da7ec94a_1747369974.png
